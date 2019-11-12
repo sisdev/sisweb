@@ -1,0 +1,5 @@
+# Allow all robots
+User-agent: *
+Allow: /
+
+Sitemap: http://www.sisoft.in/sitemap.xml

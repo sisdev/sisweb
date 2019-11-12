@@ -1,0 +1,281 @@
+
+ErrorDocument 404 /404.html
+
+#Redirect 301 http://www.sisoft.in/
+
+
+
+#RewriteEngine On 
+#Turn on the rewriting engine 
+Options +FollowSymLinks
+#RewriteRule coursesdetail-a-(.*)\.htm$ coursesdetail.php?a=$1 [L,QSA,R=301] 
+RewriteEngine on
+
+#Redirect entire domain from non-www to www - Start
+RewriteCond %{HTTP_HOST} ^sisoft.in [NC]
+RewriteRule ^(.*)$ http://www.sisoft.in/$1 [L,R=301,NC]
+#Redirect entire domain from non-www to www - End
+
+RewriteRule ^Trainer-Jobs$ career.php?career=4  [NC,L]
+RewriteRule ^trainer-jobs$ career.php?career=4  [NC,L]
+RewriteRule ^trainer-jobs$ career.php?career=4  [NC,L]
+
+RewriteRule ^rsvp$ reg_sis.php  [NC,L]
+RewriteRule ^spot$ online_courses.php  [NC,L]
+
+
+## SMAC Courses
+RewriteRule ^Android_App$ training-smac.php?a=17  [NC,L]
+RewriteRule ^Android-App-Development$ training-smac.php?a=17  [NC,L]
+RewriteRule ^android-training-ghaziabad$ training-smac.php?a=17  [NC,L]
+RewriteRule ^android-training$ training-smac.php?a=17  [NC,L]
+
+
+RewriteRule ^iOS_App$ training-smac.php?a=16  [NC,L]
+RewriteRule ^iOS-App-Development$ training-smac.php?a=16  [NC,L]
+RewriteRule ^iOS-Training-Ghaziabad$ training-smac.php?a=16  [NC,L]
+RewriteRule ^ios-training$ training-smac.php?a=16  [NC,L]
+
+
+RewriteRule ^Cordova_PhoneGap$ training-smac.php?a=39  [NC,L]
+RewriteRule ^Cordova-PhoneGap-Training$ training-smac.php?a=39  [NC,L]
+RewriteRule ^cordova-phonegap-training$ training-smac.php?a=39  [NC,L]
+
+RewriteRule ^Android_Game$ training-smac.php?a=66  [NC,L]
+RewriteRule ^android-game$ training-smac.php?a=66  [NC,L]
+
+RewriteRule ^Android_Testing$ training-smac.php?a=65  [NC,L]
+RewriteRule ^android-testing$ training-smac.php?a=65  [NC,L]
+
+RewriteRule ^Windows_Mobile$ training-smac.php?a=60  [NC,L]
+RewriteRule ^windows-mobile$ training-smac.php?a=60  [NC,L]
+
+RewriteRule ^Html5$ training-smac.php?a=61  [NC,L]
+RewriteRule ^Big_Data$ training-smac.php?a=81  [NC,L]
+RewriteRule ^big-data-hadoop$ training-smac.php?a=81  [NC,L]
+
+RewriteRule ^data-analytics$ training-smac.php?a=80  [NC,L]
+RewriteRule ^block-chain$ training-smac.php?a=90  [NC,L]
+
+RewriteRule ^Cloud_Computing$ training-smac.php?a=85  [NC,L]
+RewriteRule ^cloud-computing$ training-smac.php?a=85  [NC,L]
+
+## IT Courses
+RewriteRule ^Ethical_Hacking$ training-it-courses.php?a=63  [NC,L]
+RewriteRule ^ethical-hacking-training$ training-it-courses.php?a=63  [NC,L]
+
+
+RewriteRule ^Embedded_System$ training-it-courses.php?a=34  [NC,L]
+RewriteRule ^embedded-system$ training-it-courses.php?a=34  [NC,L]
+
+RewriteRule ^Linux_Device_Driver$ training-it-courses.php?a=67  [NC,L]
+RewriteRule ^linux-device-driver$ training-it-courses.php?a=67  [NC,L]
+
+
+RewriteRule ^SEO$ training-it-courses.php?a=32  [NC,L]
+RewriteRule ^seo$ training-it-courses.php?a=32  [NC,L]
+
+RewriteRule ^Digital-Marketing$ training-it-courses.php?a=29  [NC,L]
+RewriteRule ^digital-marketing$ training-it-courses.php?a=29  [NC,L]
+
+RewriteRule ^seo-training$ training-it-courses.php?a=32  [NC,L]
+RewriteRule ^Search-Engine-Optimization$ training-it-courses.php?a=32  [NC,L]
+RewriteRule ^search-engine-optimization$ training-it-courses.php?a=32  [NC,L]
+
+
+RewriteRule ^Computer_Fundamentals$ training-it-courses.php?a=1  [NC,L]
+RewriteRule ^computer-fundamentals$ training-it-courses.php?a=1  [NC,L]
+
+RewriteRule ^TallyERP9$ training-it-courses.php?a=70  [NC,L]
+RewriteRule ^SAP-MM$ training-it-courses.php?a=14  [NC,L]
+RewriteRule ^SAP-SD$ training-it-courses.php?a=51  [NC,L]
+RewriteRule ^SAP-FICO$ training-it-courses.php?a=52  [NC,L]
+RewriteRule ^SAP-WM$ training-it-courses.php?a=53  [NC,L]
+
+
+RewriteRule ^Advance_Excel$ training-it-courses.php?a=33  [NC,L]
+RewriteRule ^advance-excel$ training-it-courses.php?a=33  [NC,L]
+RewriteRule ^Advance-Excel$ training-it-courses.php?a=33  [NC,L]
+
+RewriteRule ^DOEACC$ training-it-courses.php?a=2  [NC,L]
+RewriteRule ^Graphics_Design$ training-it-courses.php?a=8  [NC,L]
+RewriteRule ^graphics-design$ training-it-courses.php?a=8  [NC,L]
+
+RewriteRule ^Web_Site_Design$ training-it-courses.php?a=36  [NC,L]
+RewriteRule ^web-site-design$ training-it-courses.php?a=36  [NC,L]
+
+
+RewriteRule ^C$ training-it-courses.php?a=3  [NC,L]
+RewriteRule ^C_Plus_12th$ training-it-courses.php?a=4  [NC,L]
+RewriteRule ^C_Plus_B_Tech$ training-it-courses.php?a=400  [NC,L]
+RewriteRule ^Python$ training-it-courses.php?a=40  [NC,L]
+RewriteRule ^Kotlin$ training-it-courses.php?a=42  [NC,L]
+
+
+RewriteRule ^Core_Java$ training-it-courses.php?a=5  [NC,L]
+RewriteRule ^Core-Java$ training-it-courses.php?a=5  [NC,L]
+
+RewriteRule ^Java_Core$ training-it-courses.php?a=5  [NC,L]
+RewriteRule ^java-core$ training-it-courses.php?a=5  [NC,L]
+
+RewriteRule ^Advance_Java$ training-it-courses.php?a=38  [NC,L]
+RewriteRule ^advance-java$ training-it-courses.php?a=38  [NC,L]
+
+RewriteRule ^Java_Advance$ training-it-courses.php?a=38  [NC,L]
+RewriteRule ^java-advance$ training-it-courses.php?a=38  [NC,L]
+
+RewriteRule ^Java_J2EE$ training-it-courses.php?a=38  [NC,L]
+RewriteRule ^java-j2EE$ training-it-courses.php?a=38  [NC,L]
+
+
+RewriteRule ^.NET$ training-it-courses.php?a=6  [NC,L]
+RewriteRule ^PHP_MySQL$ training-it-courses.php?a=7  [NC,L]
+RewriteRule ^php-mysql$ training-it-courses.php?a=7  [NC,L]
+	
+
+RewriteRule ^linux$ training-it-courses.php?a=35  [NC,L]
+RewriteRule ^linux-admin$ training-it-courses.php?a=35  [NC,L]
+
+
+RewriteRule ^Software_Testing$ training-it-courses.php?a=15  [NC,L]
+RewriteRule ^software-testing$ training-it-courses.php?a=15  [NC,L]
+
+RewriteRule ^selenium$ training-it-courses.php?a=27  [NC,L]
+
+
+RewriteRule ^oracle$ training-it-courses.php?a=12  [NC,L]
+RewriteRule ^CCNA$ training-it-courses.php?a=9  [NC,L]
+RewriteRule ^siebel$ training-it-courses.php?a=13  [NC,L]
+
+
+RewriteRule ^IT_Technology$ training-it-courses.php  [NC,L]
+RewriteRule ^it-technology$ training-it-courses.php  [NC,L]
+
+
+
+## Project Management Courses
+
+RewriteRule ^MS_Project$ training-project-mgnt.php?a=19  [NC,L]
+RewriteRule ^ms-Project$ training-project-mgnt.php?a=19  [NC,L]
+
+RewriteRule ^MS_Project-Training$ training-project-mgnt.php?a=19  [NC,L]
+RewriteRule ^MS_Project-Training$ training-project-mgnt.php?a=19  [NC,L]
+RewriteRule ^ms-project-training$ training-project-mgnt.php?a=19  [NC,L]
+
+
+RewriteRule ^PMP_Certification$ training-project-mgnt.php?a=18  [NC,L]
+RewriteRule ^pmp-certification$ training-project-mgnt.php?a=18  [NC,L]
+
+RewriteRule ^Project_Management$ training-project-mgnt.php?a=30  [NC,L]
+RewriteRule ^project-management$ training-project-mgnt.php?a=30  [NC,L]
+
+RewriteRule ^PMCO$ training-project-mgnt.php?a=31  [NC,L]
+
+
+RewriteRule ^Prince2$ training-project-mgnt.php?b=4001  [NC,L]
+RewriteRule ^ITIL$ training-project-mgnt.php?b=5001  [NC,L]
+RewriteRule ^Agile_Scrum$ training-project-mgnt.php?b=000  [NC,L]
+RewriteRule ^agile-scrum$ training-project-mgnt.php?b=000  [NC,L]
+
+RewriteRule ^SixSigma_GreenBelt$ training-project-mgnt.php?b=6001  [NC,L]
+RewriteRule ^sixsigma-greenbelt$ training-project-mgnt.php?b=6001  [NC,L]
+
+
+## Soft Skill Courses
+
+RewriteRule ^Soft_Skill_Training$ training-softskills.php?a=20  [NC,L]
+RewriteRule ^soft-skill-training$ training-softskills.php?a=20  [NC,L]
+
+RewriteRule ^English_Communication$ training-softskills.php?a=201  [NC,L]
+RewriteRule ^english-communication$ training-softskills.php?a=201  [NC,L]
+
+RewriteRule ^Personality_Development$ training-softskills.php?a=202  [NC,L]
+RewriteRule ^personality-development$ training-softskills.php?a=202  [NC,L]
+
+RewriteRule ^Succeed_In_Interviews$ training-softskills.php?a=206 [NC,L]
+RewriteRule ^succeed-in-interviews$ training-softskills.php?a=206 [NC,L]
+
+RewriteRule ^Time_Management$ training-softskills.php?a=205 [NC,L]
+RewriteRule ^time-management$ training-softskills.php?a=205 [NC,L]
+
+RewriteRule ^Business_Communication$ training-softskills.php?a=209 [NC,L]
+RewriteRule ^business-communication$ training-softskills.php?a=209 [NC,L]
+
+
+RewriteRule ^Organizational_Behaviour$ training-softskills.php?a=23  [NC,L]
+RewriteRule ^organizational-behaviour$ training-softskills.php?a=23  [NC,L]
+
+RewriteRule ^College_to_Corporate$ training-softskills.php?a=24  [NC,L]
+RewriteRule ^college-to-corporate$ training-softskills.php?a=24  [NC,L]
+
+RewriteRule ^Organizational_Behaviour$ training-softskills.php?a=23  [NC,L]
+RewriteRule ^organizational-behaviour$ training-softskills.php?a=23  [NC,L]
+
+
+## Certifications 
+
+RewriteRule ^Java_Certification$ certifications.php  [NC,L]
+RewriteRule ^Microsoft_Certification$ certifications.php  [NC,L]
+RewriteRule ^PMI-PMP_Certification$ certifications.php  [NC,L]
+RewriteRule ^Zend_Certification$ certifications.php  [NC,L]
+RewriteRule ^Red_Hat_Certification$ certifications.php  [NC,L]
+RewriteRule ^Android_Certification$ certifications.php  [NC,L]
+RewriteRule ^Web_App_Certification$ certifications.php  [NC,L]
+
+
+RewriteRule ^java-certification$ certifications.php  [NC,L]
+RewriteRule ^microsoft-certification$ certifications.php  [NC,L]
+RewriteRule ^PMI-PMP-certification$ certifications.php  [NC,L]
+RewriteRule ^zend-Certification$ certifications.php  [NC,L]
+RewriteRule ^red-hat-certification$ certifications.php  [NC,L]
+RewriteRule ^android-certification$ certifications.php  [NC,L]
+RewriteRule ^web-app-certification$ certifications.php  [NC,L]
+
+
+## Online Courses 
+
+RewriteRule ^Free_Courses_Online$ online_courses.php?option=1  [NC,L]
+RewriteRule ^Android_Basic_Training_Free_Online$ online_courses.php?option=11  [NC,L]
+RewriteRule ^PMP_Training_Online$ online_courses.php?option=2  [NC,L]
+RewriteRule ^MSProject_Training_Online$ online_courses.php?option=3  [NC,L]
+RewriteRule ^Agile_Scrum_Training_Online$ online_courses.php?option=4  [NC,L]
+RewriteRule ^ITIL_Training_Online$ online_courses.php?option=5  [NC,L]
+RewriteRule ^Prince2_Training_Online$ online_courses.php?option=6  [NC,L]
+RewriteRule ^SixSigma_Training_Online$ online_courses.php?option=7  [NC,L]
+RewriteRule ^Sales&Marketing_Training_Online$ online_courses.php?option=8  [NC,L]
+RewriteRule ^DigitalMarketing_Training_Online$ online_courses.php?option=8  [NC,L]
+RewriteRule ^RiskManagement_Training_Online$ online_courses.php?option=9  [NC,L]
+RewriteRule ^COBIT_Training_Online$ online_courses.php?option=10  [NC,L]
+
+
+RewriteRule ^free-courses-online$ online_courses.php?option=1  [NC,L]
+RewriteRule ^androi-basic-training-free-online$ online_courses.php?option=11  [NC,L]
+RewriteRule ^pmp-training-online$ online_courses.php?option=2  [NC,L]
+RewriteRule ^ms-project-training-online$ online_courses.php?option=3  [NC,L]
+RewriteRule ^agile-scrum-training-online$ online_courses.php?option=4  [NC,L]
+RewriteRule ^itil-training_Online$ online_courses.php?option=5  [NC,L]
+RewriteRule ^prince2-training-online$ online_courses.php?option=6  [NC,L]
+RewriteRule ^sixsigma-training-online$ online_courses.php?option=7  [NC,L]
+RewriteRule ^sales-marketing-training-online$ online_courses.php?option=8  [NC,L]
+RewriteRule ^digital-marketing-training-online$ online_courses.php?option=8  [NC,L]
+RewriteRule ^risk-management-training-online$ online_courses.php?option=9  [NC,L]
+RewriteRule ^COBIT-training-online$ online_courses.php?option=10  [NC,L]
+
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
