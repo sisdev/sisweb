@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+.click{ background:#f0f0f0}
+
+.click a{color:#FFF}
+
+.name{color:#fff; display:inline; font-weight:800;}
+
+.txt_orange{color:#ff7600}
+
+.blue{background:#00036f; text-align:center; padding-top:20px; opacity:0.8;}
+
+.orange{background:#ff7600; text-align:center; padding-top:20px; opacity:0.8;}
+
+.red{background:#F00; text-align:center; padding-top:20px; opacity:0.8;}
+
+.green{background:#060; text-align:center; padding-top:20px; opacity:0.8;}
+
+.btn-black{background:#000; color:#fff; margin-bottom:20px;}
+
+.btn-orange{background:#ff7600; color:#FFF; padding:8px 20px 8px 20px;}
+
+.col-md-3 strong{font-size:1.1em}
+
+.col-md-3 p{font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px}
+
+.col-sm-3 h5{font-size:16px; font-weight:500}
+
+label, form-control{font-size:12px; font-weight:normal; color:#333}
+
+.footer{background:#222222}
+
+.footer h5{color:#ff7600; font-weight:500; font-size:20px}
+
+.footer p{color:#fff}
+
+.footer-nav a{color:#fff}
+
+.footer_bottom_content {
+	margin: auto;
+	padding-bottom: 8px; padding-top:8px;
+	font-size: 14px;
+	color:#ff7600; text-align:center; background:#000;
+}
+
+.header-in{
+	background-image:url(../images/header-in.jpg); color:#FFF;
+	background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;   
+    -o-background-size: cover;
+}
+
+.in-heading{margin-bottom: 0px;
+    font-family: "Helvetica Neue","Droid Serif",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    line-height: 22px; padding-top:200px; padding-bottom:165px;
+	}
+
+.a{background:url(../images/location.png) no-repeat; padding-left:25px; color:#fff}
+.p{background:url(../images/phone.png) no-repeat; padding-left:25px; color:#fff}
+.e{background:url(../images/email.png) no-repeat; padding-left:25px; color:#fff}
+.w{background:url(../images/globe.png) no-repeat; padding-left:25px; color:#fff}
+
+
+.social-icon-fb {
+    background: url('../images/social-icon-fb.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-fb {
+    background: url('../images/social-icon-fb-over.png') no-repeat;
+}
+
+.social-icon-rss {
+    background: url('../images/social-icon-rss.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-rss {
+    background: url('../images/social-icon-rss-over.png') no-repeat;
+}
+
+.social-icon-twitter {
+    background: url('../images/social-icon-twitter.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-twitter {
+    background: url('../images/social-icon-twitter-over.png') no-repeat;
+}
+
+.social-icon-linkedin {
+    background: url('../images/social-icon-linkedin.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-linkedin {
+    background: url('../images/social-icon-linkedin-over.png') no-repeat;
+}
+
+
+.social-icon-you {
+    background: url('../images/social-icon-u.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-you {
+    background: url('../images/social-icon-u-over.png') no-repeat;
+}
+
+.left-sidebar {
+    border-right: 1px solid #F5F5F5;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #ff7600;
+    padding: 0px 0px 0px 30px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.01) inset;
+}
+
+.widget{background:#efefef; padding:15px; font-size:12px; font-weight:normal; border-radius:0px 0px 8px 8px}
+
+.widget p{color:#5bc0de; font-size:12px; margin:0px; padding:0px}
+
+.banner-head{color:#FFF; font-size:24px;}
+
+.img{border-radius:8px}
+
+.navbar{font-weight:bold}
+
+/*--side-menu--*/
+
+.side-menu ul li a{ font-size:13px; text-decoration:none; color:#666; font-weight:bold;}
+
+.side-menu ul li a:hover{color:#ff7600}
+
+
+
+/* Side Menu
+================================================== */
+	
+.side-menu {visibility: visible;}
+
+#left-menu {
+	display: none;
+	float:none;
+}
+
+select{width:100%; padding:8px; font-size:13px; font-weight:bold; border:1px solid#ff7600}
+
+ @media only screen and (max-width: 767px) {
+.side-menu {
+visibility: hidden;
+height: 0;
+}
+ #left-menu {
+display: inline-block;
+width: 100%;
+margin-top: 0px;
+
+}
+}
+
